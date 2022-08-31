@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" /> -->
+
+    <script
+      src="https://kit.fontawesome.com/8486ea4ba8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div id="logo">
+          <img src="img/logo.svg" />
+        </div>
+        <i id="navbar-list-toggle" class="fa-solid fa-bars"></i>
+
+        <div id="navbar-list" class="navbar-list display-none">
+          <!-- <a href="#"
+            ><i class="fa-solid fa-clock-rotate-left"></i> Recent Searches</a
+          > -->
+          <a id="donation-btn" href="https://www.buymeacoffee.com/salahkaif">
+            <i class="fa-solid fa-mug-hot"></i> Support me
+            <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="sidebar display-none">
+          <a
+            href="#main-section"
+            id="country-sidebar"
+            class="sidebar-links selected-sidebar-item"
+          >
+            <i class="fa-solid fa-earth-africa"></i>
+            Country
+          </a>
+          <a href="#overall-section" id="overall-sidebar" class="sidebar-links">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+            Overall
+          </a>
+          <a href="#budget-section" id="budget-sidebar" class="sidebar-links">
+            <i class="fa-solid fa-money-check-dollar"></i>
+            Budget
+          </a>
+          <!-- <a class="sidebar-links">
+            <i class="fa-solid fa-map-location-dot"></i>
+            Places
+          </a>
+          <a class="sidebar-links">
+            <i class="fa-solid fa-utensils"></i> Food
+          </a>
+          <a class="sidebar-links">
+            <i class="fa-solid fa-person-skiing"></i> Activities
+          </a> -->
+        </div>
+        <div class="sections">
+          <section id="main-section">
+            <div class="main-content-area">
+              <div class="main-background-color"></div>
+              <div class="main-background-image"></div>
+              <div class="main-content">
+                <h1 id="main-header">
+                  Lets Find a random <br />country to travel!
+                </h1>
+                <p id="description">
+                  Click, explore and travel! Thats all what you need
+
+                  <br />to dig into the world countries information.
+                </p>
+                <button id="search-btn">
+                  <i class="fa-solid fa-search"></i> Find a country
+                </button>
+                <a
+                  class="more-details-scroll display-none"
+                  href="#overall-section"
+                >
+                  More details<br /><i class="fa-solid fa-angles-down"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+          <section id="overall-section" class="display-none-important">
+            <div class="biography">
+              <h2>Biography</h2>
+              <div class="bio-card">
+                <div class="card-information">
+                  <h2 class="card-country-name">Country</h2>
+                  <div class="images-wrapper">
+                    <div class="card-images">
+                      <img
+                        id="card-scores-image"
+                        class="card-image"
+                        src="img/overall-card/scores.png"
+                      />
+                      <img
+                        id="card-biography-image"
+                        class="card-image"
+                        src="img/overall-card/bio.svg"
+                      />
+                      <img
+                        id="card-facts-image"
+                        class="card-image"
+                        src="img/overall-card/facts.svg"
+                      />
+                    </div>
+                  </div>
+
+                  <img class="card-country-flag" />
+                  <!-- src="https://flagcdn.com/es.svg" -->
+                  <div class="card-nav-btns">
+                    <a
+                      id="card-btn-scores"
+                      image="card-scores-image"
+                      content="card-scores-section"
+                      class="card-btn btn-with-divider card-nav-selected"
+                      >Scores</a
+                    >
+                    <a
+                      id="card-btn-biography"
+                      image="card-biography-image"
+                      content="card-biography-section"
+                      class="card-btn btn-with-divider"
+                      >Biography</a
+                    >
+                    <a
+                      id="card-btn-facts"
+                      image="card-facts-image"
+                      content="card-facts-section"
+                      class="card-btn"
+                      >Facts</a
+                    >
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-wrapper">
+                    <div id="card-scores-section">
+                      <table class="card-scores">
+                        <tr>
+                          <td>Overall:</td>
+                          <td>
+                            <div class="bar-wrapper">
+                              <div class="overall-bar"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Safety:</td>
+                          <td>
+                            <div class="bar-wrapper">
+                              <div class="safety-bar"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Cost:</td>
+                          <td>
+                            <div class="bar-wrapper">
+                              <div class="cost-bar"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Internet:</td>
+                          <td>
+                            <div class="bar-wrapper">
+                              <div class="internet-bar"></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- <tr>
+                          <td>Beauty:</td>
+                          <td>
+                            <div class="bar-wrapper">
+                              <div class="beauty-bar"></div>
+                            </div>
+                          </td>
+                        </tr> -->
+                      </table>
+                    </div>
+                    <div id="card-biography-section" class="display-none">
+                      <table class="card-scores">
+                        <tr>
+                          <td><b>Population:</b></td>
+                          <td class="card-population">100 million</td>
+                        </tr>
+                        <tr>
+                          <td><b>Language:</b></td>
+                          <td class="card-languages">Spanish</td>
+                        </tr>
+                        <tr>
+                          <td><b>Currency:</b></td>
+                          <td class="card-currencies">Euro</td>
+                        </tr>
+                        <tr>
+                          <td><b>Capitals:</b></td>
+                          <td class="card-capitals">Barca</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="card-facts-section" class="display-none">
+                      <ul class="facts-list"></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="map">
+              <h2>map</h2>
+              <div class="map-frame">
+                <iframe
+                  class="map-iframe"
+                  loading="lazy"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDLwwdjlq5oMGKnQ2gYEFGHx1sUyP7hcOc
+                    &q=RsAyAfyaiNVb8DpW8"
+                >
+                </iframe>
+
+                <img class="map-stick-left" src="img/map-stick.svg" />
+                <img class="map-stick-right" src="img/map-stick.svg" />
+              </div>
+            </div>
+          </section>
+          <section id="budget-section" class="display-none-important">
+            <h1>Some Prices</h1>
+            <div class="costs-table">
+              <table class="budget-table">
+                <tr>
+                  <th></th>
+                  <th>Product/Service</th>
+                  <th>Cost</th>
+                </tr>
+                <!-- <tr>
+                  <td rowspan="3">
+                    <a class="budget-table-icon">
+                      <i class="fa-solid fa-plane"></i> Flight
+                    </a>
+                  </td>
+                  <td>Plane from algeria to spain for 1 person</td>
+                </tr>
+                <tr>
+                  <td>Plane for 2 people</td>
+                </tr>
+                <tr>
+                  <td>Plane for a family of 5</td>
+                </tr>
+
+                <tr>
+                  <td class="budget-table-divider" colspan="5"></td>
+                </tr>
+                <tr>
+                  <td rowspan="5">
+                    <a class="budget-table-icon">
+                      <i class="fa-solid fa-bed"></i> Accommodation
+                    </a>
+                  </td>
+                  <td>1 night in hotel for one person</td>
+                </tr>
+                <tr>
+                  <td>1 night in hotel for 2 people</td>
+                </tr>
+                <tr>
+                  <td>1 night in hotel for a family of 5</td>
+                </tr>
+                <tr>
+                  <td>Rent per month (1 bed room)</td>
+                </tr>
+                <tr>
+                  <td>Rent per month (3 bed rooms)</td>
+                </tr>
+                <tr>
+                  <td class="budget-table-divider" colspan="5"></td>
+                </tr> -->
+                <tr>
+                  <td rowspan="4">
+                    <a class="budget-table-icon">
+                      <i class="fa-solid fa-car"></i> Transportation
+                    </a>
+                  </td>
+                  <td>Taxi Start (Normal Tariff)</td>
+                </tr>
+                <tr>
+                  <td>Taxi 1 mile (Normal Tariff)</td>
+                </tr>
+                <tr>
+                  <td>One-way Ticket (Local Transport)</td>
+                </tr>
+                <!-- <tr>
+                  <td>Normal car rent</td>
+                </tr> -->
+                <tr>
+                  <td>Gasoline (1 gallon)</td>
+                </tr>
+                <tr>
+                  <td class="budget-table-divider" colspan="5"></td>
+                </tr>
+                <tr>
+                  <td rowspan="5">
+                    <a class="budget-table-icon">
+                      <i class="fa-solid fa-burger"></i> Food
+                    </a>
+                  </td>
+                  <td>Meal, Inexpensive Restaurant</td>
+                </tr>
+                <tr>
+                  <td>Meal for 2 People, Mid-range Restaurant, Three-course</td>
+                </tr>
+                <tr>
+                  <td>McMeal at McDonalds (or Equivalent Combo Meal)</td>
+                </tr>
+                <tr>
+                  <td>Cappuccino (regular)</td>
+                </tr>
+                <tr>
+                  <td>Water (12 oz small bottle)</td>
+                </tr>
+                <tr>
+                  <td class="budget-table-divider" colspan="5"></td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <!-- <div class="website-how-to-use">
+            <div class="how-to-use-first">
+              <i class="fa-solid fa-magnifying-glass-location fa-2x"></i>
+
+              <h3>Search</h3>
+
+              <p>
+                Find your next destination randomly, You can also specify your
+                requirements, such as budget and activities type.
+              </p>
+            </div>
+            <div class="how-to-use-second">
+              <i class="fa-solid fa-user-clock fa-2x"></i>
+              <h3>Explore and decide</h3>
+              <p>
+                Dig into the country from A-Z, examine their fully lifestyle
+                from food type and price, activities, weather, ...
+              </p>
+            </div>
+            <div class="how-to-use-third">
+              <i class="fa-solid fa-map-location-dot fa-2x"></i>
+              <h3>Plan!</h3>
+              <p>
+                Plan your next travel with the best offers that chosen by us!
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-links">
+          <a><i class="fa-solid fa-house"></i> Home</a>
+          <a><i class="fa-solid fa-circle-question"></i> About</a>
+          <a href="https://github.com/salahkai/"
+            ><i class="fa-solid fa-at"></i> Contact</a
+          >
+        </div>
+        <div class="footer-links">
+          <a>Terms of use</a> <a>Privacy policy</a>
+        </div>
+        <br />
+        <div class="about-maker">
+          Made with <i class="fa-solid fa-heart"></i> by Salahkai
+          <a href="https://github.com/salahkai">github</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/database/countrycodes.js"></script>
+  <script src="js/database/internetspeed.js"></script>
+  <script src="js/app.js"></script>
+</html>
